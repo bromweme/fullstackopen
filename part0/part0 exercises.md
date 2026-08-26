@@ -1,4 +1,5 @@
-#0.4 
+#0.4
+
 sequenceDiagram
     participant browser
     participant server
@@ -29,6 +30,7 @@ sequenceDiagram
     deactivate server
 
 #0.5
+
 sequenceDiagram
     participant browser
     participant server
@@ -54,9 +56,11 @@ sequenceDiagram
     deactivate server
 
 #0.6
+
 sequenceDiagram
     participant browser
     participant server
+    
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
     server-->>browser: HTTP status code 201, {"message":"note created"}
